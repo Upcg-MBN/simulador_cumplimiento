@@ -19,6 +19,7 @@ body{background:var(--bg);color:var(--txt);font-family:"Segoe UI",system-ui,sans
 .topbar h1{font-size:1.1rem;font-weight:700;margin:0;}
 .layout{display:flex;min-height:calc(100vh - 74px);}
 .sidebar{width:230px;flex-shrink:0;background:var(--sb-bg);padding:20px 0;position:sticky;top:74px;height:calc(100vh - 74px);overflow-y:auto;}
+.sb-version{position:absolute;left:20px;bottom:14px;font-size:.72rem;color:var(--sb-txt);opacity:.6;}
 .sidebar a{display:flex;align-items:center;gap:10px;color:var(--sb-txt);text-decoration:none;padding:10px 20px;font-size:.87rem;border-left:3px solid transparent;transition:all .18s;}
 .sidebar a:hover,.sidebar a.active{background:rgba(255,255,255,.07);color:#fff;border-left-color:#60a5fa;}
 .content{flex:1;padding:26px;overflow:hidden;}
@@ -51,6 +52,7 @@ body{background:var(--bg);color:var(--txt);font-family:"Segoe UI",system-ui,sans
   .layout{flex-direction:column;}
   .sidebar{width:100%;height:auto;position:relative;top:0;display:flex;flex-wrap:wrap;padding:6px 0;}
   .sidebar a{border-left:none;flex:1 1 45%;}
+  .sb-version{position:static;padding:4px 20px;}
 }
 </style>
 </head>
@@ -79,6 +81,7 @@ body{background:var(--bg);color:var(--txt);font-family:"Segoe UI",system-ui,sans
     <!-- <a href="#s5"><i class="fa-solid fa-user-check fa-fw"></i>MIT por Equipo</a> -->
     <!-- <a href="#s6"><i class="fa-solid fa-file-alt fa-fw"></i>Resumen FH</a> -->
     <!-- <a href="#s7"><i class="fa-solid fa-layer-group fa-fw"></i>Resumen Programas</a> -->
+    <div class="sb-version" title="Versión del panel">v0</div>
   </nav>
 
   <main class="content">
